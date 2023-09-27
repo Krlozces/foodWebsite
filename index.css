@@ -1,0 +1,386 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inder&family=Lato:wght@300&family=Space+Mono&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Lato:wght@300;700&family=Space+Mono&display=swap');
+:root{
+    --orange:#f87212;
+    --white: #E6FFFD;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #010523;
+    color: #EFDDDD;
+    font-family: 'Lato', sans-serif;
+}
+
+.orange{
+    color: var(--orange);
+}
+
+main, footer{
+    width: 70%;
+    margin: 4px auto;
+}
+
+/* barra de navegación */
+ul{
+    list-style: none;
+}
+
+nav{
+    width: 45%;
+}
+
+h1{
+    width: 56%;
+}
+
+#bar-container{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+#nav-container{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    background-color: #00051D;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.anchor-bar{
+    color: #EFDDDD;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+.anchor-bar:hover{
+    color: var(--orange);
+    border-bottom: 2px solid var(--white);
+}
+
+/* content */
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sub-content{
+    font-size: 1.5rem;
+    margin: 25px 0;
+}
+
+.content>h2{
+    font-size: 70px;
+    font-weight: 800;
+}
+
+.content>.sub-content>h3{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.center-content{
+    margin: 90px auto 120px auto;
+}
+
+.reduced-img{
+    width: 450px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-content{
+    margin-left: 40px;
+}
+
+.about-content>h2{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.about-content>.reduced-space>h3{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.about-content>p{
+    margin: 0 0 20px 0;
+    color: #fff;
+}
+
+.reduced-space{
+    width: 60%;
+    margin: 10px 0 20px 0;
+}
+
+.menu-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    background-color: var(--white);
+    width: 35%;
+    margin: 40px 10px 80px 10px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card>h4,p{
+    color: #000;
+}
+
+.card>span{
+    color: var(--orange);
+}
+
+.mini-reduced-img{
+    width: 200px;
+}
+
+.subtitle{
+    font-size: 20px;
+    text-align: center;
+}
+
+.sub-subtitle{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.service-img{
+    width: 100px;
+}
+
+.service-content{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 80px 0;
+}
+
+.service-box{
+    width: 30%;
+    text-align: center;
+}
+
+.service-box>p{
+    color: #fff;
+    margin-top: 10px;
+}
+
+.slogan{
+    background-color: var(--white);
+    height: 250px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 6rem 0;
+    padding: 30px;
+}
+
+.slogan .phrase p{
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 0 0 40px 0;
+}
+
+.phrase{
+    width: 350px;
+    height: 130px;
+}
+
+/* buttons */
+button{
+    background-color: var(--orange);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: #EFDDDD;
+}
+
+button:hover{
+    border: 2px solid var(--orange);
+    box-shadow: 3px 3px 6px #fff;
+}
+
+/* footer */
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 8rem 0;
+}
+
+.anchor-footer{
+    text-decoration: none;
+    color: #65647C;
+}
+
+.footer-card ul li{
+    margin: 10px 0;
+}
+
+.footer-card{
+    width: 350px;
+}
+
+.footer-card-contact{
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+/* revisar icons */
+.fa-cog {
+    color: #fff;
+    text-align: center;
+}
+
+.fa-cog:hover{
+    color: #526D82;
+}
+
+/* .fa-chevron-circle-up {
+    background: var(--orange);
+    border-radius: 50%;
+    height: 1.5em;
+    width: 1.5em;
+} */
+
+h5 {
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
+    font-size: 16px;
+}
+
+h5:before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 0%;
+    border-bottom: 1px solid var(--orange);
+}
+
+.anchor-footer:hover{
+    animation: hoverleft 4s cubic-bezier(0.0, 0.5, 0.5, 1.0) 0s infinite;
+    position: relative;
+}
+
+.menu{
+    display: none;
+}
+
+@keyframes hoverleft{
+    from {
+        right: 0;
+    }
+    
+    to {
+        right: 20px;
+        color: #fff;
+        font-weight: 400;
+    }
+}
+
+/* Arreglar los detalles y hacer responsive la página */
+@media screen and (max-width:740px){
+    .flex-container{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    #nav-container nav{
+        display: none;
+    }
+
+    #nav-container{
+        background-color: var(--white);
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .center-responsive{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .center-responsive p{
+        color: #E6FFFD;
+        margin-bottom: 8px;
+    }
+
+    .contact-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 8rem 0;
+    }
+
+    .footer-card{
+        width: 150px;
+    }
+
+    .service-content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 40px 0 80px 0;
+    }
+    
+    .service-box{
+        width: 250px;
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    .service-box>p{
+        color: #fff;
+        margin-top: 6px;
+    }
+
+    .menu-card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .card{
+        width: 350px;
+        margin: 10px 0;
+    }
+
+    .center-content{
+        margin: 90px auto;
+    }
+
+    .reduced-img{
+        width: 220px;
+    }
+}
